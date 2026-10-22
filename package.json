@@ -1,0 +1,27 @@
+{
+  "name": "jwt-handson",
+  "version": "1.0.0",
+  "description": "A practical, lab-driven course on JSON Web Tokens: from raw token anatomy to a multi-service architecture using JWKS and Redis.",
+  "scripts": {
+    "test": "node --test test/middleware.test.mjs test/acceptance.test.mjs lab02/server.test.mjs lab04/server.test.mjs",
+    "dev": "nodemon",
+    "auth": "node services/auth/index.mjs",
+    "orders": "node services/orders/index.mjs",
+    "billing": "node services/billing/index.mjs",
+    "attacks": "node lab08/attacks.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "express": "^5.3.0",
+    "ioredis": "^6.0.0",
+    "jose": "^6.2.13"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  },
+  "private": "true"
+}

@@ -1,0 +1,22 @@
+# dependencies
+node_modules/
+
+# key material: never commit, even demo keys
+*.pem
+*.key
+lab03/keys/
+keys*.json
+
+# local env / secrets
+.env
+.env.*
+
+# lab artefacts
+jar.txt
+stolen.txt
+*.log
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
